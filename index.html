@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Train Scheduler</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -8,117 +9,81 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="assets/style.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/style.css">
 </head>
-  <body>
 
+<body>
 
-        <div class="container">
-                <div class="jumbotron jumbotron-fluid">
-                    <div class="container">
-                        <h1 class="display-3">Train Scheduler</h1>
-                        <h2 class="class">I hear that train a comin'... It's rollin' round the bend...</h2>
-                       
-                      
-                    </div>
-                </div>
-            
-            <!-- FORM 1 TRAIN SCHEDULE -->
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-3">Train Scheduler</h1>
+                <h2 class="class">I hear that train a comin'... It's rollin' round the bend...</h2>
 
-            <div class="row">
-                    <div class="card-header col-12 bg-info text-white"> Current Train Schedule </div>
-                    
-                        <table class="table" id='train-schedule-table'>
-                                <thead>
-                                    <!-- table head -->
-                                  <tr>
-                                    <th>Train Name</th>
-                                    <th>Destination</th>
-                                    <th>Frequency</th>
-                                    <th>Next Arrival</th>
-                                    <th>Minutes Away</th>
-                                   
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>Marrakesh Express</td>
-                                    <td>Unionville</td>
-                                    <td>30</td>
-                                    <td>05:05</td>
-                                    <td>25</td>
-                                    
-                                  </tr>
-                                  <tr>
-                                        <td>Marrakesh Express I</td>
-                                        <td>KC</td>
-                                        <td>25</td>
-                                        <td>05:25</td>
-                                        <td>10</td>
-                                        
-                                  </tr>
-                                  <tr>
-                                        <td>Marrakesh Express II</td>
-                                        <td>STL</td>
-                                        <td>15</td>
-                                        <td>05:35</td>
-                                        <td>15</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-        
-                </div> <!--end of row-->
-            
-            
-                    <!-- Example row of columns -->
-                    <div class="row">
-                            <div class="card-header col-12 bg-info text-white"> Add Train </div>
-                        <div class="card col-12">
-                           
-                            <div class="card-body">
-            
-                                <form id='train-admin-form'>
-                                    <div class="form-group">
-                                        <label for="exampleFormControlInput1">Train Name</label>
-                                        <input type="text" class="form-control" id="trainName" placeholder="Enter train name">
-                                    </div>
-                                    <div class="form-group">
-                                            <label for="exampleFormControlInput1">Destination</label>
-                                            <input type="text" class="form-control" id="destination" placeholder="Enter train destination">
-                                        </div>
-                                    <div class="form-group">
-                                        <label for="exampleFormControlInput1">First Train Time (HH:mm -- military time) </label>
-                                        <input type="text" class="form-control" id="firstTrainTime" placeholder="Enter first train time">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleFormControlInput1">Frequency (mins)</label>
-                                        <input type="text" class="form-control" id="frequency" placeholder="Enter frequency">
-                                    </div>
-                                </form>
-            
-                                <a href="#" class="btn btn-info" id='submit-button'>Submit</a>
-                                
-                            </div>
+            </div>
+        </div>
+
+        <!-- FORM 1 TRAIN SCHEDULE -->
+
+        <div class="row">
+            <div class="card-header col-12 bg-info text-white"> Current Train Schedule </div>
+
+            <table class="table" id='train-schedule-table'>
+                <thead>
+                    <!-- table head -->
+                    <tr>
+                        <th>Train Name</th>
+                        <th>Destination</th>
+                        <th>Frequency</th>
+                        <th>Next Arrival</th>
+                        <th>Minutes Away</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+
+        </div>
+  
+        <div class="row">
+            <div class="card-header col-12 bg-info text-white"> Add Train </div>
+            <div class="card col-12">
+
+                <div class="card-body">
+
+                    <form id='train-admin-form'>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Train Name</label>
+                            <input type="text" class="form-control" id="trainName" placeholder="Enter train name">
                         </div>
-                    </div>
-            
-                    <hr>
-            
-               
-                <!-- /container -->
-            <!-- FORM 2 DYNAMIC CONNECTED WITH DATABASE -->
-              
-                    <!-- Example row of columns -->
-              
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Destination</label>
+                            <input type="text" class="form-control" id="destination" placeholder="Enter train destination">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">First Train Time (HH:mm -- military time) </label>
+                            <input type="text" class="form-control" id="firstTrainTime" placeholder="Enter first train time">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Frequency (mins)</label>
+                            <input type="text" class="form-control" id="frequency" placeholder="Enter frequency">
+                        </div>
+                    </form>
+
+                    <a href="#" class="btn btn-info" id='submit-button'>Submit</a>
+
                 </div>
             </div>
+        </div>
 
+        <hr>
 
-      
-    <!-- Optional JavaScript -->
-    <!-- Firebase Script -->
- 
+    </div>
+    </div>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src=" https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
@@ -127,4 +92,5 @@
     <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
     <script src="assets/app.js"></script>
 </body>
+
 </html>
