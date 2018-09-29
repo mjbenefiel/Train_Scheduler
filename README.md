@@ -1,17 +1,29 @@
-Make sure that your app suits this basic spec:
+Project: Train Scheduler
 
-When adding trains, administrators should be able to submit the following:
+Author: Michael Benefiel
 
-Train Name
+Why I created this project:
 
-Destination 
+Homework for the University of Kansas Coding Boot Camp.
 
-First Train Time -- in military time
+Feel free to use some or all of this code if you're trying to complete a similar project.
 
-Frequency -- in minutes
+Additional Notes/Commentary:
 
-Code this app to calculate when the next train will arrive; this should be relative to the current time.
+Would like to spend more time building this out in the future.
 
-Users from many different machines must be able to view same train times.
+THE PROJECT
 
-Styling and theme are completely up to you. Get Creative!
+Bootstrap 4.1.2 jQuery 3.3.1 Moment.js
+
+- Initialize Firebase
+
+- Declare Variables
+
+- Pull user input from fields
+
+- Run calculations for when train next train is arriving, etc.
+
+- Push values and calculated values to current train schedule board
+
+- Data stored in Firebase
