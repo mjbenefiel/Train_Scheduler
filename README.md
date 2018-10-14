@@ -15,10 +15,7 @@ Feel free to use some or all of this code if you're trying to complete a similar
 <hr></hr>
 
 <h2> Project overview</h2>
-This train scheduler app incorporates Firebase to host arrival and departure data. It retrieves and manipulates the information with Moment.js. Further, it provides up-to-date information about various trains, namely their arrival times and how many minutes remain until they arrive at their station.
-
-
-The app still needs styled; however, it's completely functional.
+This train scheduler app incorporates Firebase to host arrival and departure data. It retrieves and manipulates the information with Moment.js. Further, it provides up-to-date information about various trains, namely their arrival times and how many minutes remain until they arrive at their station. The app still needs styled; however, it's completely functional.
 <hr></hr>
 
 <h2> How it works </h2>
